@@ -1,0 +1,250 @@
+html {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    background-color: #161313;
+    
+    text-align: center;
+    color: whitesmoke;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display:flex;
+    justify-content: space-between;
+    position:fixed;
+    border-bottom:solid 3px white;
+    width: 100%;
+    align-items: center;
+    top:0;
+    z-index: 1;
+    background-color: #161313 ;
+    
+    
+}
+
+
+@media only screen and (max-width: 1450px) {
+
+    #nav-logo-group-1, #nav-logo-group-2 img {
+        display: none;
+    }
+    .navbar {
+        justify-content: left;
+    }
+
+    #banner-background img {
+        display:none;
+    }
+
+    .logos {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+
+    
+
+}
+
+@media only screen and (max-width: 860px) {
+    .logos {
+        flex-flow: column nowrap; 
+        align-items: center;
+    }
+}
+
+
+
+
+#nav-logo-group-1 img {
+    position: left;
+    max-width:100%;
+    max-height: 3rem;
+    margin-left: 2.25rem;
+    border-radius: 500px;
+    margin-right: 2.25rem;
+    border: 1px solid black;
+}
+
+#nav-logo-group-2 img {
+    position: right;
+    max-width:100%;
+    max-height: 3rem;
+    margin-left: 2.25rem;
+    border-radius: 500px;
+    margin-right: 2.25rem;
+}
+
+#nav-list ul{
+    
+    display:flex;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+#nav-list a{
+    text-decoration: none;
+    text-transform: none;
+    color: white;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+
+.content {
+    margin-top: 6rem;
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    height: 100%;
+    overflow: visible;
+    align-content: center;
+    
+}
+
+
+
+
+
+#banner-background img {
+    position: absolute;
+    top:7rem;
+    left:5rem;
+    right: 5rem;
+    width:90%;
+    height: 25rem;
+    z-index: -1;
+    border-radius: 20px;
+    opacity: .4;
+}
+.banner-top h1 {
+    text-transform: capitalize;
+    font-weight: 800;
+    font-size: 60px;
+    background-color: transparent;
+    text-shadow: 5px 5px 5px #140e0e;
+    letter-spacing: .75rem;
+    border-radius: 15px;
+    padding: .2rem 1rem;
+    color:white
+}
+
+
+
+.banner-top {
+    margin-top: 5rem;
+    width: 100%;
+    height:8.5rem;
+    opacity: .95;
+    border-bottom: 1px solid white;
+}
+
+h3.browse {
+    margin-top: 5rem;
+    text-shadow: 2px 2px 2px #600f0f;
+}
+
+
+.clients {
+    
+    margin-top: 16rem;
+    color:#161313;
+    background-color: white;
+    text-shadow: 1px 1px 1px #161313;
+    letter-spacing: 3px;
+    font-weight: 300;
+    text-decoration:dotted;
+    border:groove 1px white;
+    font-family: "Raleway";
+    
+}
+
+.logos {
+    display: flex;
+}
+
+.logos img {
+    flex-direction: unset;
+    max-width: 15rem;
+    margin: 1rem 2rem;
+    border-radius: 1000px;
+    opacity: 1;
+    border:ridge 1px #600f0f;
+    
+}
+
+.mission-statement {
+    position: relative;
+    margin-top: 6.5rem;
+    background-color: rgb(157, 252, 252);
+    padding: 2.5rem 0;
+    
+}
+
+
+.text p {
+    font-family: "Raleway", sans-serif;
+    letter-spacing: .25rem;
+    width: 100%;
+    color: #140e0e;
+    font-size: 16px;
+    font-weight: 300;
+    
+}
+
+.header h2 {
+    font-family: "Raleway", sans-serif;
+    font-size: 36px;
+    letter-spacing: .5rem;
+    font-weight: 300;
+    color: #140e0e;
+}
+
+.team {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.team-pics img {
+    max-width: 15rem;
+    border-radius: 15px;
+}
+.team-title h2 {
+    font-family: "Josefin-Sans", sans-serif;
+    font-size: 36px;
+    letter-spacing: .5rem;
+    font-weight: 300;
+}
+
+.team-pics figcaption {
+    margin: 1rem 0;
+    font-size: 25px;
+    font-family: "Josefin-Sans";
+    font-weight: 400;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid white;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    background-color: #140e0e;
+    z-index: 1;
+    opacity: .9;
+}
+
+.company-name {
+    position: left;
+    font-size: 10px;
+    margin-left: 1rem;
+}
+
+.footer-info {
+    position: right;
+    font-size: 10px;
+    margin-right: 2rem;
+}
